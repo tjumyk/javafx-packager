@@ -9,6 +9,35 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Javafx-packager</title>
+	
+	<!-- template: code to load DT javascript will be inserted here -->
+	<SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+	<!-- template: code to insert application on page load will be 
+		inserted here -->
+	
+<script>
+    function javafxEmbed() {
+        dtjava.embed(
+            {
+                url : 'JavaFXPackager.jnlp',
+				params:{
+					bgColor:"f2,f2,f2"
+				},
+                placeholder : 'javafx-app-placeholder',
+                width : 600,
+                height : 400,
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iSmF2YUZYUGFja2FnZXIuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+SmF2YUZYUGFja2FnZXI8L3RpdGxlPg0KICAgIDx2ZW5kb3I+dGp1bXlrPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPlNhbXBsZSBKYXZhRlggMi4wIGFwcGxpY2F0aW9uLjwvZGVzY3JpcHRpb24+DQogICAgPGljb24gaHJlZj0iZmlsZTovRjovU0NTL3dvcmtzcGFjZS1uYi9KYXZhRlhQYWNrYWdlci9zcmMvdGp1bXlrL2phdmFGeC5wbmciIC8+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGpmeDpqYXZhZngtcnVudGltZSB2ZXJzaW9uPSIyLjIrIiBocmVmPSJodHRwOi8vamF2YWRsLnN1bi5jb20vd2ViYXBwcy9kb3dubG9hZC9HZXRGaWxlL2phdmFmeC1sYXRlc3Qvd2luZG93cy1pNTg2L2phdmFmeDIuam5scCIvPg0KICA8L3Jlc291cmNlcz4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJKYXZhRlhQYWNrYWdlci5qYXIiIHNpemU9IjMzNjA0NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliL2FudC1qYXZhZnguamFyIiBzaXplPSI0NzU2MDYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQo8c2VjdXJpdHk+DQogIDxhbGwtcGVybWlzc2lvbnMvPg0KPC9zZWN1cml0eT4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJKYXZhRlhQYWNrYWdlciIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjIuMisiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIG1haW4tY2xhc3M9InRqdW15ay5NYWluIiAgbmFtZT0iSmF2YUZYUGFja2FnZXIiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed);
+</script>
+
   </head>
 
   <body>
@@ -34,6 +63,9 @@
         <p>Confused about packaging JavaFx 2 Applications when using Eclipse and don't want to install a NetBeans?</p>
 
 <p>You can check this simple online tool(Need Java &amp; Browser Plugin Support) or download this project to run it locally.</p>
+
+<!-- Application will be inserted here -->
+        <div id='javafx-app-placeholder'></div>
       </section>
     </div>
 
