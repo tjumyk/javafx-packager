@@ -12,8 +12,8 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXPackager.jar" size="336046" download="eager" />
-    <jar href="lib/ant-javafx.jar" size="475606" download="eager" />
+    <jar href="JavaFXPackager.jar" size="336030" download="eager" />
+    <jar href="lib/ant-javafx.jar" size="475603" download="eager" />
   </resources>
 <security>
   <all-permissions/>
