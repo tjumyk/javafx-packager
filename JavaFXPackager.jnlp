@@ -12,12 +12,13 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXPackager.jar" size="336030" download="eager" />
-    <jar href="lib/ant-javafx.jar" size="475603" download="eager" />
+    <jar href="JavaFXPackager.jar" size="336038" download="eager" />
+    <jar href="lib/ant-javafx.jar" size="475604" download="eager" />
   </resources>
 <security>
   <all-permissions/>
 </security>
+  <shortcut><desktop/></shortcut>
   <applet-desc  width="600" height="400" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXPackager" >
     <param name="requiredFXVersion" value="2.2+"/>
   </applet-desc>
